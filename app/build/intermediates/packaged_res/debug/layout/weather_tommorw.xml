@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="2dp">
+
+    <TextView
+        android:id="@+id/weather_text_tommorw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="23.05.2002"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="10dp"/>
+
+    <ImageView
+        android:id="@+id/weather_img_tommorw"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/weather_temp_tommorw"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:id="@+id/weather_temp_tommorw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="15C'"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weather_img_tommorw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
